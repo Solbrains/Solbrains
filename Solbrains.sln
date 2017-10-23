@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solbrains", "Solbrains\Solbrains.csproj", "{7E07485A-DC57-4DFA-A290-E69614EBFBD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83018B8A-D4E3-4D55-811A-302749671F80}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E07485A-DC57-4DFA-A290-E69614EBFBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E07485A-DC57-4DFA-A290-E69614EBFBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E07485A-DC57-4DFA-A290-E69614EBFBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E07485A-DC57-4DFA-A290-E69614EBFBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50FD0B1B-76E1-482E-897F-3343B14B3A1F}
+	EndGlobalSection
+EndGlobal
