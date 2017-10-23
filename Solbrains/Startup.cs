@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -24,14 +26,16 @@ namespace Solbrains
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services
-                .AddMvc()
+            services.AddMvc()
                 // Maintain property names during serialization. See:
                 // https://github.com/aspnet/Announcements/issues/194
                 .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             // Add Kendo UI services to the services container
             services.AddKendo();
+
+            services.AddDbContext<SolbrainsContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("SolbrainsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

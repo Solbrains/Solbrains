@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DAL.Models
 {
-    class Purchase
+    public class Purchase
     {
         public int Id { get; set; }
         //public DateTime DateOf { get; set; }
